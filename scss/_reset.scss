@@ -14,7 +14,10 @@ body{
     
 }
 input{
-outline:none;
+outline: none;
+                &:hover{
+                    outline: none;
+                }
 }
 .dark-mode{
     background-color: white;
