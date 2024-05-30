@@ -1,0 +1,59 @@
+.pris{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    .pris-all{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+        .pris-box{
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            width: 350px;
+            padding: 30px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color:white;
+            color:  #1f2e35;
+            gap: 10px;
+            &:hover{
+                background-color: rgba(2, 137, 122, 1);
+                color: white;
+            }
+            &:hover .pris-pr {
+                color: white;
+            }
+            &:hover .pris-box-btn{
+                background-color: white;
+                color: rgba(2, 137, 122, 1);
+            }
+            .pris-box-btn{
+                background-color: rgba(2, 137, 122, 1);
+                color: white;
+                width: 60%;
+                border-radius: 4px;
+                padding: 8px 15px;
+            }
+            .pris-pr{
+                display: flex;
+                align-items:center ;
+                color: rgba(2, 137, 122, 1);
+                .pr-left{
+                    text-align: end;
+                    width: 50%;
+                    font-size: 55px;
+                    
+                }
+                .pr-right{
+                    width: 50%;
+                    text-align: start;
+                }
+            }
+        }
+    }
+}

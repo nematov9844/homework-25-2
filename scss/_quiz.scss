@@ -1,0 +1,45 @@
+.quiz{
+    text-align: center;
+    color: inherit;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    p{
+        width: 50%;
+    }
+    .quiz-all{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(450px, 1fr) );
+        gap: 20px;
+        justify-content: center;
+        .quiz-box{
+            
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            div{
+                display: flex;
+                gap: 20px;
+            }
+            h4{
+                padding: 10px;
+                background-color: white;
+                border-radius: 20px;
+            }
+
+        }
+    }
+    .quiz-btn{
+        padding: 8px 22px ;
+        background-color:  rgba(2, 137, 122, 1);
+        color: white;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+}

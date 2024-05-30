@@ -1,0 +1,49 @@
+.say{
+    display: flex;
+    flex-direction: column;
+     text-align: center;
+     justify-content: center;
+     justify-items: center;
+     gap: 20px;
+     .say-descb{
+        padding: 0px 400px;
+     }
+    .say-all{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        .say-box{
+            width: 350px;
+            height: 250px;
+            background-color: white;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: start;
+            padding: 0px 20px;
+            gap: 10px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.491);
+            .say-bottom{
+                display: flex;
+                justify-content: left;
+                gap: 10px;
+                .say-box-left{
+                    display: flex;
+                    // justify-content: end;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        
+                    }
+
+                }
+                .say-box-right{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
