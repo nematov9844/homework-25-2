@@ -106,6 +106,9 @@ header .navbar .logo a {
   align-items: center;
   font-size: 30px;
 }
+header .navbar #btn {
+  display: none;
+}
 header .navbar .nav-item {
   display: flex;
   align-items: center;
@@ -137,227 +140,24 @@ header .navbar .nav-item .nav-list .nav-btn-dark:hover {
   box-shadow: 0px 0px 0px 0px;
 }
 
-.hero {
-  height: 85vh;
-  display: flex;
-  gap: 10px;
-  color: inherit;
-}
-.hero .hero-left {
-  width: 50%;
-  padding: 100px 0px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  justify-content: space-around;
-}
-.hero .hero-left h2 {
-  font-size: 40px;
-}
-.hero .hero-left p {
-  font-size: 20px;
-}
-.hero .hero-left .hero-left-bottom {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-.hero .hero-left .hero-left-bottom .hero-left-btn {
-  padding: 8px 22px;
-  background-color: rgb(2, 137, 122);
-  color: white;
-  border-radius: 4px;
-}
-.hero .hero-left .hero-left-bottom a {
-  color: rgb(2, 137, 122);
-  font-size: 20px;
-  color: inherit;
-}
-.hero .hero-right {
-  width: 50%;
-}
-.hero .hero-right img {
-  width: 100%;
-  height: 100%;
-}
-
-.product {
-  margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-  color: inherit;
-  gap: 20px;
-  align-items: center;
-  justify-content: space-between;
-}
-.product .product-title {
-  font-size: 30px;
-  font-weight: 700;
-}
-.product .product-btn {
-  padding: 8px 22px;
-  background-color: rgb(2, 137, 122);
-  color: white;
-  border-radius: 4px;
-}
-.product .product-box-all {
-  flex-wrap: wrap;
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-}
-.product .product-box-all .product-box {
-  width: 250px;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  color: inherit;
-  gap: 20px;
-  text-align: left;
-  flex-direction: column;
-}
-.product .product-box-all .product-box img {
-  padding: 15px;
-  width: 55px;
-  height: 55px;
-  background-color: blueviolet;
-  border-radius: 50%;
-}
-
-.manager .manager-all {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.manager .manager-all .manager-box {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-  gap: 30px;
-  align-items: center;
-  align-content: center;
-}
-.manager .manager-all .manager-box .manager-left {
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  color: inherit;
-}
-.manager .manager-all .manager-box .manager-left p {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.manager .manager-all .manager-box .manager-right {
-  max-width: 600px;
-  display: flex;
-}
-.manager .manager-all .manager-box .manager-right img {
-  width: 100%;
-  height: 100%;
-}
-
-.quiz {
-  text-align: center;
-  color: inherit;
-  display: flex;
-  gap: 30px;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-}
-.quiz p {
-  width: 50%;
-}
-.quiz .quiz-all {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  gap: 20px;
-  justify-content: center;
-}
-.quiz .quiz-all .quiz-box {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: black;
-}
-.quiz .quiz-all .quiz-box div {
-  display: flex;
-  gap: 20px;
-}
-.quiz .quiz-all .quiz-box h4 {
-  padding: 10px;
-  background-color: white;
-  border-radius: 20px;
-}
-.quiz .quiz-btn {
-  padding: 8px 22px;
-  background-color: rgb(2, 137, 122);
-  color: white;
-  border-radius: 4px;
-  font-size: 16px;
-  font-weight: 700;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.content .content-title {
-  font-size: 34px;
-  font-weight: 700;
-  color: inherit;
-}
-.content .content-desc {
-  font-size: 16px;
-  font-weight: 400;
-  margin-bottom: 20px;
-  color: inherit;
-}
-.content .content-all {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-.content .content-all .content-box {
-  width: 350px;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-}
-.content .content-all .content-box .content-img {
-  width: 100%;
-  height: 60%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-.content .content-all .content-box .content-box-desc {
-  height: 40%;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px;
-  text-align: start;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  color: black;
-}
-
 .pris {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 15px;
+}
+.pris .pris-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+.pris .pris-info {
+  font-size: 40px;
+  font-weight: 700;
+}
+.pris p {
+  font-size: 16px;
+  font-weight: 500;
 }
 .pris .pris-all {
   display: flex;
@@ -411,51 +211,123 @@ header .navbar .nav-item .nav-list .nav-btn-dark:hover {
   text-align: start;
 }
 
-.say {
+.enter {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 0px;
+}
+.enter .enter-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+.enter .enter-info {
+  font-size: 34px;
+  font-weight: 700;
+}
+.enter .enter-desc {
+  font-size: 18px;
+  font-weight: 400;
+}
+.enter .enter-btn {
+  background-color: rgb(2, 137, 122);
+  color: white;
+  border-radius: 4px;
+  padding: 8px 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.manager {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 0px;
   text-align: center;
-  justify-content: center;
-  justify-items: center;
-  gap: 20px;
 }
-.say .say-descb {
-  padding: 0px 400px;
+.manager .manager-title {
+  font-size: 34px;
+  font-weight: 700;
 }
-.say .say-all {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-.say .say-all .say-box {
-  width: 350px;
-  height: 250px;
-  background-color: white;
-  color: black;
+.manager .manager-all {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: start;
-  padding: 0px 20px;
-  gap: 10px;
-  border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.491);
+  gap: 20px;
 }
-.say .say-all .say-box .say-bottom {
+.manager .manager-all .manager-box {
+  width: 100%;
   display: flex;
-  justify-content: left;
+  gap: 30px;
+  align-items: center;
+  align-content: center;
+}
+.manager .manager-all .manager-box .manager-left {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: inherit;
+}
+.manager .manager-all .manager-box .manager-left h2 {
+  display: flex;
+  align-items: center;
   gap: 10px;
 }
-.say .say-all .say-box .say-bottom .say-box-left {
+.manager .manager-all .manager-box .manager-left p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.manager .manager-all .manager-box .manager-right {
+  max-width: 600px;
   display: flex;
 }
-.say .say-all .say-box .say-bottom .say-box-left img {
+.manager .manager-all .manager-box .manager-right img {
   width: 100%;
   height: 100%;
 }
-.say .say-all .say-box .say-bottom .say-box-right {
+
+.asked {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  padding: 50px 0px;
+}
+.asked .asked-title {
+  font-size: 34px;
+  font-weight: 700;
+}
+.asked .asked-desc {
+  font-size: 18px;
+  font-weight: 400;
+}
+.asked .asked-info {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: start;
+  gap: 15px;
+  padding: 20px 0px;
+}
+.asked .asked-info .asked-info-title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+.asked .asked-info .asked-info-p {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .join {
@@ -463,7 +335,7 @@ header .navbar .nav-item .nav-list .nav-btn-dark:hover {
   justify-content: center;
 }
 .join .join-all {
-  padding: 20px;
+  padding: 20px 50px;
   height: 60%;
   width: 80%;
   display: flex;
@@ -502,10 +374,12 @@ header .navbar .nav-item .nav-list .nav-btn-dark:hover {
 }
 
 footer {
-  height: 60vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0px;
 }
 footer .footer-all {
   width: 100%;

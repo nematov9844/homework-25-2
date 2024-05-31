@@ -11,11 +11,16 @@
 body{
     background-color: #1f2e35;
     color: white;
-    
+    .header__shrink{
+        box-shadow: 0px 0px 15px 0px white ;
+     }    
 }
 .dark-mode{
     background-color: white;
     color: #1f2e35;
+    .header__shrink{
+        box-shadow: 0px 0px 15px 0px black ;
+     }
 }
 body button:hover{
     box-shadow: 5px 5px 5px 0px white;
